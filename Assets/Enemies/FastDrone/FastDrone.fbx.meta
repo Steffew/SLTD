@@ -1,11 +1,8 @@
 fileFormatVersion: 2
-guid: 04f5c57efc443e44486df3f47bb73c07
+guid: 2f0b1ed4b424b88458eae2109e9a3cc5
 ModelImporter:
   serializedVersion: 19300
-  internalIDToNameTable:
-  - first:
-      74: -7040443751290603996
-    second: FastDroneBlades|FastDroneBladesAction
+  internalIDToNameTable: []
   externalObjects: {}
   materials:
     materialImportMode: 1
