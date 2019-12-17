@@ -176,7 +176,7 @@ MonoBehaviour:
     m_Value: 1
   colorMode:
     m_OverrideState: 1
-    m_Value: 0
+    m_Value: 1
   color:
     m_OverrideState: 1
     m_Value: {r: 1, g: 1, b: 1, a: 1}
@@ -205,7 +205,7 @@ MonoBehaviour:
     m_Value: 10
   maximumHeight:
     m_OverrideState: 1
-    m_Value: 60
+    m_Value: 30
   albedo:
     m_OverrideState: 0
     m_Value: {r: 1, g: 1, b: 1, a: 1}
@@ -214,7 +214,7 @@ MonoBehaviour:
     showEyeDropper: 1
   meanFreePath:
     m_OverrideState: 1
-    m_Value: 50
+    m_Value: 49.03
     min: 1
   enableVolumetricFog:
     m_OverrideState: 1
