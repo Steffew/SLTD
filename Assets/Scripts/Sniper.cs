@@ -18,7 +18,7 @@ public class Sniper : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        transform.position = Vector3.Lerp(transform.position, targetPos.position, 1 * Time.deltaTime);
+        transform.position = Vector3.Lerp(transform.position, targetPos.position, 7.5f * Time.deltaTime);
 
         if (inTransition && Vector3.Distance(transform.position, targetPos.position) < 0.1f)
         {
