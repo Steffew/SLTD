@@ -9,16 +9,18 @@ public class Sniper : MonoBehaviour
     public bool repeatable = false;
     public float speed = 1f;
     bool inTransition = false;
+    public float sniperTransparency = 0f;
 
     void Start()
     {
         SetTarget(unscopedPos);
+
     }
 
     // Update is called once per frame
     void Update()
     {
-        transform.position = Vector3.Lerp(transform.position, targetPos.position, 7.5f * Time.deltaTime);
+        transform.position = Vector3.Lerp(transform.position, targetPos.position, 5f * Time.deltaTime);
 
         if (inTransition && Vector3.Distance(transform.position, targetPos.position) < 0.1f)
         {
@@ -40,13 +42,16 @@ public class Sniper : MonoBehaviour
     {
         if(Vector3.Distance(transform.position, scopedPos.position) < 0.1f)
         {
-            //Do the stuff
             print("scoped");
+            gameObject.GetComponent<MeshRenderer>().enabled = false; // Hide sniper when scoped in.
+        }
+        else
+        {
+            gameObject.GetComponent<MeshRenderer>().enabled = true; // Show sniper when not scoped in, this doesn't mean fully unscoped though.
         }
 
         if(Vector3.Distance(transform.position, unscopedPos.position) < 0.1f)
         {
-            //Do other stuff
             print("unscoped");
         }
     }
