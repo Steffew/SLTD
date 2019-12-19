@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.Rendering;
 
 public class Sniper : MonoBehaviour
 {
@@ -10,11 +11,12 @@ public class Sniper : MonoBehaviour
     public float speed = 1f;
     bool inTransition = false;
     public float sniperTransparency = 0f;
+    public GameObject PostProcessVolume;
+    public GameObject SniperScope;
 
     void Start()
     {
         SetTarget(unscopedPos);
-
     }
 
     // Update is called once per frame
@@ -36,6 +38,12 @@ public class Sniper : MonoBehaviour
         {
             SetTarget(unscopedPos);
         }
+
+        // TEST
+        if (Input.GetKeyDown(KeyCode.P))
+        {
+            PostProcessVolume.GetComponent<Volume>().enabled = false;
+        }
     }
 
     void FinishedTransition()
@@ -44,10 +52,12 @@ public class Sniper : MonoBehaviour
         {
             print("scoped");
             gameObject.GetComponent<MeshRenderer>().enabled = false; // Hide sniper when scoped in.
+            SniperScope.SetActive(true);
         }
         else
         {
             gameObject.GetComponent<MeshRenderer>().enabled = true; // Show sniper when not scoped in, this doesn't mean fully unscoped though.
+            SniperScope.SetActive(false);
         }
 
         if(Vector3.Distance(transform.position, unscopedPos.position) < 0.1f)
