@@ -31,7 +31,6 @@ public class TurretAI : MonoBehaviour
     void UpdateTarget()
     {
         print("test");
-
         // If no enemy is found, set the shortestDistance to NaN to be safe.
         GameObject[] enemies = GameObject.FindGameObjectsWithTag(enemyTag);
         float shortestDistance = Mathf.Infinity;
