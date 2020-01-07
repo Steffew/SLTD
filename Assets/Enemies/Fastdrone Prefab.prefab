@@ -292,8 +292,8 @@ GameObject:
   - component: {fileID: 2497701575522853031}
   - component: {fileID: 2574976483514697822}
   m_Layer: 0
-  m_Name: Fastdrone 1
-  m_TagString: Untagged
+  m_Name: Fastdrone Prefab
+  m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0

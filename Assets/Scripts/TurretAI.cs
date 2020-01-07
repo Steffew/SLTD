@@ -4,11 +4,13 @@ using UnityEngine;
 
 public class TurretAI : MonoBehaviour
 {
-    private Transform target;
+    public Transform target;
     public float detectRange = 15f;
     public string enemyTag = "Enemy";
+    public float fireRate = 1f;
+    private float fireCountdown = 0f;
 
-    public Transform rotateJoint;
+    //  Transform rotateJoint;
 
     void Start()
     {
@@ -27,11 +29,23 @@ public class TurretAI : MonoBehaviour
         // Quaternion lookRotation = Quaternion.LookRotation(dir);
         // Vector3 rotation = lookRotation.eulerAngles;
         // rotateJoint.rotation = Quaternion.Euler (0f, rotation.y, 0f);
+
+        if (fireCountdown <= 0f)
+        {
+            Fire();
+            fireCountdown = 1f / fireRate;
+        }
+
+        fireCountdown -= Time.deltaTime;
+    }
+
+    void Fire()
+    {
+        print("Shoot");
     }
 
     void UpdateTarget()
     {
-        print("test");
         // If no enemy is found, set the shortestDistance to NaN to be safe.
         GameObject[] enemies = GameObject.FindGameObjectsWithTag(enemyTag);
         float shortestDistance = Mathf.Infinity;
