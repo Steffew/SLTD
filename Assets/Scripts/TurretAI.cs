@@ -21,11 +21,12 @@ public class TurretAI : MonoBehaviour
         if (target == null)
             return;
 
+        /// DISABLED DUE TO THE LACK OF ASSETS THAT REQUIRE THIS FEATURE!
         // BLUE ARROW // Point at target if any.
-        Vector3 dir = target.position - transform.position;
-        Quaternion lookRotation = Quaternion.LookRotation(dir);
-        Vector3 rotation = lookRotation.eulerAngles;
-        rotateJoint.rotation = Quaternion.Euler (0f, rotation.y, 0f);
+        // Vector3 dir = target.position - transform.position;
+        // Quaternion lookRotation = Quaternion.LookRotation(dir);
+        // Vector3 rotation = lookRotation.eulerAngles;
+        // rotateJoint.rotation = Quaternion.Euler (0f, rotation.y, 0f);
     }
 
     void UpdateTarget()
