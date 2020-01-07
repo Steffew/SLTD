@@ -2,3 +2,5 @@ Add LockScreen var that shows cursor and sets sensitivity to 0, for a buymenu an
 
 Credits:
 https://freesound.org/people/Sclolex/sounds/210540/ - night ambience
+
+https://youtu.be/oqidgRQAMB8?list=PLPV2KyIb3jR4u5jX8za5iU1cqnQPmbzG0&t=1419
