@@ -210,6 +210,7 @@ GameObject:
   - component: {fileID: 7201603620221112632}
   - component: {fileID: 7201603620221112639}
   - component: {fileID: 7201603620221112638}
+  - component: {fileID: 5465261906976092072}
   m_Layer: 0
   m_Name: PlasmaBullet
   m_TagString: Untagged
@@ -279,3 +280,20 @@ MeshRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
+--- !u!114 &5465261906976092072
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7201603620221112635}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 541b95a2272a83c49be2cb4394b4dfec, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  speed: 50
+  damage: 100
+  explosionRadius: 0
+  impactEffect: {fileID: 5305682142693152474, guid: c36b321589be3c74fa6d148f8b13e405,
+    type: 3}
