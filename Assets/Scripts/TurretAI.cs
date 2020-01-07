@@ -5,8 +5,10 @@ using UnityEngine;
 public class TurretAI : MonoBehaviour
 {
     public Transform target;
+    private string enemyTag = "Enemy";
+
+    [Header("Attributes")]
     public float detectRange = 15f;
-    public string enemyTag = "Enemy";
     public float fireRate = 1f;
     private float fireCountdown = 0f;
 

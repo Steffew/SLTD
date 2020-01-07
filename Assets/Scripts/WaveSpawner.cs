@@ -2,7 +2,7 @@
 using System.Collections;
 using TMPro;
 
-public class WaveManager : MonoBehaviour
+public class WaveSpawner : MonoBehaviour
 {
 
     public static int EnemiesAlive = 0;
@@ -12,7 +12,7 @@ public class WaveManager : MonoBehaviour
     public Transform spawnPoint;
 
     public float timeBetweenWaves = 5f;
-    private float countdown = 10f;
+    private float countdown = 2f;
 
     public TextMeshProUGUI waveCountdownText;
 
