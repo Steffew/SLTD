@@ -12,6 +12,9 @@ public class TurretAI : MonoBehaviour
     public float fireRate = 1f;
     private float fireCountdown = 0f;
 
+    public GameObject bulletPrefab;
+    public Transform firePoint;
+
     //  Transform rotateJoint;
 
     void Start()
@@ -43,7 +46,7 @@ public class TurretAI : MonoBehaviour
 
     void Fire()
     {
-        print("Shoot");
+        Instantiate(bulletPrefab, firePoint.position, firePoint.rotation);
     }
 
     void UpdateTarget()
