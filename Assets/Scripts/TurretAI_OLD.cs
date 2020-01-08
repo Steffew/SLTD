@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class TurretAI : MonoBehaviour
+public class TurretAI_OLD : MonoBehaviour
 {
     public Transform target;
     private string enemyTag = "Enemy";
