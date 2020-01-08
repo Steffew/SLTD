@@ -54,8 +54,6 @@ public class Bullet : MonoBehaviour
         {
             Damage(target);
         }
-
-        Destroy(target.gameObject);
         Destroy(gameObject);
     }
 
@@ -79,6 +77,7 @@ public class Bullet : MonoBehaviour
         {
             e.TakeDamage(damage);
         }
+        print(e);
     }
 
     void OnDrawGizmosSelected()
