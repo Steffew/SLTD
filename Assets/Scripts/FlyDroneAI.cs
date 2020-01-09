@@ -19,6 +19,7 @@ public class FlyDroneAI : MonoBehaviour
         Vector3 dir = target.position - transform.position;
         transform.Translate(dir.normalized * speed * Time.deltaTime, Space.World);
 
+        // If the target is close enough to its destination, move to the next waypoint.
         if (Vector3.Distance(transform.position, target.position) <= 0.2f)
         {
             GoToNextWaypoint();

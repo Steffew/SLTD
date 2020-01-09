@@ -27,7 +27,7 @@ public class WaveManager : MonoBehaviour
             return;
         }
 
-        if (waveIndex == waves.Length)
+        if (waveIndex == waves.Length) // If the current wave matches the maximum amount of waves, the user has won the game.
         {
             gameManager.WinLevel();
             this.enabled = false;
@@ -55,7 +55,7 @@ public class WaveManager : MonoBehaviour
 
         EnemiesAlive = wave.count;
 
-        for (int i = 0; i < wave.count; i++)
+        for (int i = 0; i < wave.count; i++) // Spawn the enemy with the set rate.
         {
             SpawnEnemy(wave.enemy);
             yield return new WaitForSeconds(1f / wave.rate);

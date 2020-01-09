@@ -46,6 +46,7 @@ public class Bullet : MonoBehaviour
         GameObject effectIns = (GameObject)Instantiate(impactEffect, transform.position, transform.rotation);
         Destroy(effectIns, 5f);
 
+        // If explosion is enabled (for different turret), then add the explosion. Oterwise damage the target instead.
         if (explosionRadius > 0f)
         {
             Explode();

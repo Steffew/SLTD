@@ -41,6 +41,7 @@ public class Enemy : MonoBehaviour
 
     void Die()
     {
+        // Add the worth to the player's balance and tell the wavespawner that one enemy has been eliminated.
         isDead = true;
 
         PlayerStats.Money += worth;

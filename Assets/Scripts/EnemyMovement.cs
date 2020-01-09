@@ -32,6 +32,7 @@ public class EnemyMovement : MonoBehaviour
 
     void GetNextWaypoint()
     {
+        // Obtain the waypoint's index, which sets the target making the enemy approach the next waypoint.
         if (wavepointIndex >= WayPoint.points.Length - 1)
         {
             EndPath();
@@ -44,6 +45,7 @@ public class EnemyMovement : MonoBehaviour
 
     void EndPath()
     {
+        // If there is no waypoints left (so, the end of the path), subtract health.
         PlayerStats.Lives--;
         WaveSpawner.EnemiesAlive--;
         Destroy(gameObject);

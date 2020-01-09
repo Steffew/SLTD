@@ -1600,7 +1600,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0b33c46ab64ddf147a9ab82a98109e18, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  startMoney: 400
+  startMoney: 500
   MoneyBalance: {fileID: 1764804227}
   startLives: 20
   HealthState: {fileID: 454326904}
@@ -1632,7 +1632,7 @@ MonoBehaviour:
   waves:
   - enemy: {fileID: 2497701575522853027, guid: 126c861fb4111f247a0fabe8949052ee, type: 3}
     count: 10
-    rate: 2
+    rate: 0.3
   - enemy: {fileID: 2497701575522853027, guid: 126c861fb4111f247a0fabe8949052ee, type: 3}
     count: 2
     rate: 0.3
@@ -2107,8 +2107,7 @@ Transform:
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children:
-  - {fileID: 1008447990}
+  m_Children: []
   m_Father: {fileID: 2036281301}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -7058,11 +7057,11 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1008447987}
   m_LocalRotation: {x: -0.7071068, y: -0, z: -0, w: 0.7071068}
-  m_LocalPosition: {x: 0.099975586, y: 93.37778, z: 38.3399}
+  m_LocalPosition: {x: 0.099975586, y: 104.100006, z: 2}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
-  m_Father: {fileID: 837104364}
-  m_RootOrder: 0
+  m_Father: {fileID: 0}
+  m_RootOrder: 11
   m_LocalEulerAnglesHint: {x: -90, y: 0, z: 0}
 --- !u!1 &1139829628
 GameObject:
