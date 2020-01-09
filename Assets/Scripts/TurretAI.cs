@@ -49,7 +49,7 @@ public class TurretAI : MonoBehaviour
         GameObject bulletGO = (GameObject)Instantiate(bulletPrefab, firePoint.position, firePoint.rotation);
         Bullet bullet = bulletGO.GetComponent<Bullet>();
 
-        if (bullet != null)
+        if (bullet != null) // If target doesn't exist anymore, seek for a new one.
             bullet.Seek(target);
     }
 

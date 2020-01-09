@@ -27,7 +27,7 @@ public class WaveSpawner : MonoBehaviour
             return;
         }
 
-        if (waveIndex == waves.Length)
+        if (waveIndex == waves.Length) // If the current wave is the last wave and it's finished, the user wins the game.
         {
             gameManager.WinLevel();
             this.enabled = false;
@@ -42,7 +42,7 @@ public class WaveSpawner : MonoBehaviour
 
         countdown -= Time.deltaTime;
 
-        countdown = Mathf.Clamp(countdown, 0f, Mathf.Infinity);
+        countdown = Mathf.Clamp(countdown, 0f, Mathf.Infinity); // Limit countdown so it won't go below 0.
 
         waveCountdownText.text = string.Format("{0:00.00}", countdown);
     }

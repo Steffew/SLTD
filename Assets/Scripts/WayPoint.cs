@@ -16,4 +16,3 @@ public class WayPoint : MonoBehaviour
     }
 
 }
-//hoi
