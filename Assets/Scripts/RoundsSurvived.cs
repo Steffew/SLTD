@@ -13,6 +13,11 @@ public class RoundsSurvived : MonoBehaviour
         StartCoroutine(AnimateText());
     }
 
+    private void Update()
+    {
+        roundsText.text = "Wave " + PlayerStats.rounds;
+    }
+
     IEnumerator AnimateText()
     {
         roundsText.text = "0";
@@ -20,11 +25,9 @@ public class RoundsSurvived : MonoBehaviour
 
         yield return new WaitForSeconds(.7f);
 
-        while (round < PlayerStats.Rounds)
+        while (round < PlayerStats.rounds)
         {
             round++;
-            roundsText.text = round.ToString();
-
             yield return new WaitForSeconds(.05f);
         }
 

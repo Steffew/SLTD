@@ -49,7 +49,7 @@ public class WaveManager : MonoBehaviour
 
     IEnumerator SpawnWave()
     {
-        PlayerStats.Rounds++;
+        PlayerStats.rounds++;
 
         Wave wave = waves[waveIndex];
 

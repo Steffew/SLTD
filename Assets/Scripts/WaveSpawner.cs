@@ -15,7 +15,6 @@ public class WaveSpawner : MonoBehaviour
     private float countdown = 2f;
 
     public TextMeshProUGUI waveCountdownText;
-
     public GameManager gameManager;
 
     private int waveIndex = 0;
@@ -49,7 +48,7 @@ public class WaveSpawner : MonoBehaviour
 
     IEnumerator SpawnWave()
     {
-        PlayerStats.Rounds++;
+        PlayerStats.rounds++;
 
         Wave wave = waves[waveIndex];
 
