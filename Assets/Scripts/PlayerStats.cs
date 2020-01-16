@@ -24,7 +24,7 @@ public class PlayerStats : MonoBehaviour {
 
     private void Update()
     {
-        MoneyBalance.text = "€" + startMoney;
+        MoneyBalance.text = "€" + Money;
         HealthState.text = " Lives: " + Lives;
     }
 }
