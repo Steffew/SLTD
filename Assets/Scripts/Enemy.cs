@@ -9,10 +9,10 @@ public class Enemy : MonoBehaviour
     [HideInInspector]
     public float speed;
 
-    public float startHealth = 100;
+    public float startHealth = 120;
     private float health;
 
-    public int worth = 50;
+    public int worth = 26;
 
     public GameObject deathEffect;
 

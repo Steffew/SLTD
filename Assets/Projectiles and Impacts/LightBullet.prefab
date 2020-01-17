@@ -212,7 +212,7 @@ GameObject:
   - component: {fileID: 7201603620221112638}
   - component: {fileID: 5465261906976092072}
   m_Layer: 0
-  m_Name: PlasmaBullet
+  m_Name: LightBullet
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -293,7 +293,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 50
-  damage: 12
+  damage: 15
   explosionRadius: 0
-  impactEffect: {fileID: 5305682142693152474, guid: c36b321589be3c74fa6d148f8b13e405,
+  impactEffect: {fileID: 5305682142693152474, guid: 03cfdc4df5982eb42b6b07c9de71238d,
     type: 3}
