@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityStandardAssets.Characters.FirstPerson;
 
 public class CameraViewSwitch : MonoBehaviour
 {
@@ -16,17 +17,19 @@ public class CameraViewSwitch : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        print(topViewMode);
+        print(MouseLook.lockCursor);
         if (Input.GetKeyUp(KeyCode.Space))
         {
             if (!topViewMode)
             {
+                MouseLook.SetCursorLock(false);
                 topViewMode = true;
                 topViewObject.SetActive(true);
                 regularViewObject.SetActive(false);
             }
             else
             {
+                MouseLook.SetCursorLock(true);
                 topViewMode = false;
                 regularViewObject.SetActive(true);
                 topViewObject.SetActive(false);
